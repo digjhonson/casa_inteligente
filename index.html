@@ -1,112 +1,147 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Casa Inteligente</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Casa Inteligente</h1>
-        <p>Controle todos os seus dispositivos em um só lugar. </p>
+        <p>
+            Controle todos os seus dispositivos em um 
+            só lugar.
+        </p>
     </header>
     <main>
         <!-- SALA -->
-        <section>
-            <h2>Sala</h2>
-<!-- LAMPADA DA SALA -->
-            <div>
-                <div>
-                    <p>💡</p>
-                    <label for=""><input type="checkbox"></label>
+        <section class="comodos-section">
+            <h2 class="titulo-section">Sala</h2>
+             <div class="dispositivo-flex">
+                <!-- LAMPADA DA SALA -->
+                <div class="dispositivo-card" data-type="lampada">
+                    <div>
+                        <p>💡</p>
+                        <label for="">
+                            <input type="checkbox" class="dipositivo-slider" id="lamp-sala">
+                            <span class="slider"></span>
+                        </label>
+                    </div> 
+                <h3 class="dispositivo-title">Lâmpada da Sala</h3>
+                <h3 class="dispositivo-status">Desligada</h3>  
                 </div>
-              <h3>Lampada da Sala</h3>
-              <h3>Desligada</h3>
-            </div>
-        <!-- CORTINA DA SALA -->
-         <div>
-            <div>
-                <p>🪟</p>
-                <label for=""><input type="checkbox"></label>
-            </div>
-            <h3>Cortina</h3>
-            <h3>Fechada</h3>
-         </div>
-         <!-- PORTA -->
-          <div>
-            <p>🚪</p>
-            <label for=""><input type="checkbox"></label>
-          </div>
-          <div>
-            <h3>Porta</h3>
-            <h3>Fechada</h3>
-          </div>
+                <!-- CORTINA DA SALA -->
+                <div class="dispositivo-card" data-type="cortina">
+                    <div>
+                        <p>🪟</p>
+                        <label for="">
+                            <input type="checkbox" class="dipositivo-slider" id="cort-sala">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <h3 class="dispositivo-title">Cortina</h3>
+                    <h3 class="dispositivo-status">Fechada</h3>
+                </div>
+                <!-- PORTA -->
+                <div class="dispositivo-card" data-type="porta">
+                    <div>
+                        <p>🚪</p>
+                        <label for="">
+                            <input type="checkbox" class="dipositivo-slider" id="port-sala">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <h3 class="dispositivo-title">Porta</h3>
+                    <h3 class="dispositivo-status">Fechada</h3>
+                </div>
+           
         </section>
         <!-- COZINHA -->
-        <section>
-            <h2>Cozinha</h2>
-            <!-- LAMPADA COZINHA -->
-            <div>
+        <section class="comodos-section">
+         
+            <h2 class="titulo-section">Cozinha</h2>
+     <div class="dispositivo-flex">
+            <!-- LÂMPADA COZINHA -->
+            <div class="dispositivo-card" data-type="lampada">
                 <div>
                     <p>💡</p>
-                    <label for=""><input type="checkbox"></label>
+                    <label for="">
+                        <input type="checkbox"class="dipositivo-slider" id="lamp-cozinha">
+                            <span class="slider"></span>
+                    </label>
                 </div>
-               <h3>Lâmpada Cozinha </h3>
-               <h3>Desligada</h3>
+                <h3 class="dispositivo-title">Lâmpada Cozinha</h3>
+                <h3 class="dispositivo-status">Desligada</h3>
             </div>
-            <!-- EXASTOR -->
-             <div>
+            <!-- EXAUSTOR -->
+            <div class="dispositivo-card" data-type="exaustor">
                 <div>
                     <p>🥘</p>
-                    <label for=""><input type="checkbox"></label>
+                    <label>
+                        <input type="checkbox"class="dipositivo-slider" id="exaus-cozinha">
+                            <span class="slider"></span>
+                    </label>
                 </div>
-                <h3>Exaustor</h3>
-                <h3>Desligado</h3>
-             </div>
+                <h3 class="dispositivo-title">Exaustor</h3>
+                <h3 class="dispositivo-status">Desligado</h3>
+            </div>
+    </div>
         </section>
         <!-- VARANDA / GARAGEM -->
-        <section> 
-            <h2>Varanda / Garagem</h2>
-            <!-- VARAL -->
-            <div>
-                <div>
-                    <p>👕</p>
-                    <label for=""><input type="checkbox"></label>
-                </div>
-                <h3>Varal</h3>
-                <h3>Fechada</h3>
-            </div>
+        <section class="comodos-section">
+            <h2 class="titulo-section">Varanda / Garagem</h2>
+            <div class="dispositivo-flex">
             <!-- ILUMINAÇÃO -->
-             <div>
+            <div class="dispositivo-card" data-type="lampada">
                 <div>
                     <p>💡</p>
-                    <label for=""><input type="checkbox"></label>
+                    <label for="">
+                        <input type="checkbox"class="dipositivo-slider" id="lamp-varanda">
+                            <span class="slider"></span>
+                    </label>
                 </div>
-                <h3>Iluminação</h3>
-                <h3>Desligado</h3>
-             </div>
-             <!-- IRRIGAÇÃO -->
-             <div>
+                <h3 class="dispositivo-title">Iluminação</h3>
+                <h3 class="dispositivo-status">Desligada</h3>
+            </div>
+            <!-- VARAL -->
+            <div class="dispositivo-card" data-type="varal">
                 <div>
-                    <p>🚿</p>
-                    <label for=""><input type="checkbox"></label>
+                    <p>👕</p>
+                    <label for="">
+                        <input type="checkbox"class="dipositivo-slider" id="var-varanda">
+                            <span class="slider"></span>
+                    </label>
                 </div>
-               <h3>Irrigação</h3>
-               <h3>Desligado</h3>
-             </div>
-
-             <!-- PORTÃO -->
-             <div>
+                <h3 class="dispositivo-title">Varal</h3>
+                <h3 class="dispositivo-status">Fechado</h3>
+            </div>
+            <!-- PORTÃO -->
+            <div class="dispositivo-card" data-type="portao">
                 <div>
                     <p>🚗</p>
-                    <label for=""><input type="checkbox"></label>
+                    <label for="">
+                        <input type="checkbox"class="dipositivo-slider" id="port-varanda">
+                            <span class="slider"></span>
+                    </label>
                 </div>
-               <h3>Portão</h3>
-               <h3>Fechado</h3>
-             </div>
+                <h3 class="dispositivo-title">Portão</h3>
+                <h3 class="dispositivo-status">Fechado</h3>
+            </div>
+            <!-- IRRIGAÇÃO -->
+            <div class="dispositivo-card" data-type="irrigacao">
+                <div>
+                    <p>🪴</p>
+                    <label for="">
+                        <input type="checkbox"class="dipositivo-slider" id="ir-varanda">
+                            <span class="slider"></span>
+                    </label>
+                </div>
+                <h3 class="dispositivo-title">Irrigação</h3>
+                <h3 class="dispositivo-status">Desligado</h3>
+            </div>
+    </div>   
         </section>
     </main>
 </body>
-<script src="script.js"></script> 
 </html>
